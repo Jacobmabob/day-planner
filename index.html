@@ -20,17 +20,20 @@
   </head>
 
   <body class="bg-light">
-    <header class="jumbotron">
+    <header class="jumbotron bg-primary text-light p-1">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container my-4">
       <!-- Timeblocks go here -->
+      <div class="d-grid gap-2">
+        <button class="btn btn-primary" type="button" id="expand-collapse">Expand All</button>
+      </div>
       <div class="accordion" id="accordionExample">
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingOne">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
         6am
       </button>
     </h2>
@@ -50,7 +53,7 @@
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingTwo">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
         7am
       </button>
     </h2>
@@ -70,8 +73,9 @@
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingThree">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
         8am
+        <span class="position-absolute top-50 start-100 translate-middle p-2 bg-danger border border-light rounded-circle"></span>
       </button>
     </h2>
     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
@@ -90,7 +94,7 @@
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingFour">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
         9am
       </button>
     </h2>
@@ -110,7 +114,7 @@
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingFive">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
         10am
       </button>
     </h2>
@@ -130,7 +134,7 @@
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingSix">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
         11am
       </button>
     </h2>
@@ -150,7 +154,7 @@
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingSeven">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
         12pm
       </button>
     </h2>
@@ -170,7 +174,7 @@
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingEight">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
         1pm
       </button>
     </h2>
@@ -190,7 +194,7 @@
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingNine">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="true" aria-controls="collapseNine">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="true" aria-controls="collapseNine">
         2pm
       </button>
     </h2>
@@ -210,7 +214,7 @@
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingTen">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="true" aria-controls="collapseTen">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="true" aria-controls="collapseTen">
         3pm
       </button>
     </h2>
@@ -230,7 +234,7 @@
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingEleven">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="true" aria-controls="collapseEleven">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="true" aria-controls="collapseEleven">
         4pm
       </button>
     </h2>
@@ -250,7 +254,7 @@
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingTwelve">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="true" aria-controls="collapseTwelve">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="true" aria-controls="collapseTwelve">
         5pm
       </button>
     </h2>
@@ -270,7 +274,7 @@
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingThirteen">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirteen" aria-expanded="true" aria-controls="collapseThirteen">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirteen" aria-expanded="true" aria-controls="collapseThirteen">
         6pm
       </button>
     </h2>
