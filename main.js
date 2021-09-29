@@ -36,6 +36,7 @@ var todoInputTwelve = $(".todo-twelve")
 var todoInputThirteen = $(".todo-thirteen")
 
 var accordionButtonArray = $(".accordion-button");
+var badgeArray = $(".badge-icon");
 
 var expandCollapseBttn = $("#expand-collapse");
 
@@ -107,10 +108,13 @@ function compareCurrentTime() {
     for (var i = 0; i < hoursArray.length; i++) {
         if (hoursArray[i] < currentTime){
             accordionButtonArray.eq(i).addClass("past");
+            badgeArray.eq(i).addClass("past");
         } else if (hoursArray[i] === currentTime) {
             accordionButtonArray.eq(i).addClass("present");
+            badgeArray.eq(i).addClass("present");
         } else {
             accordionButtonArray.eq(i).addClass("future");
+            badgeArray.eq(i).addClass("future");
         }
     }
 }
