@@ -10,4 +10,4 @@ I can create in the future.
 https://jacobmabob.github.io/day-planner/
 
 
-![Picture of app](.day-planner.png)
+![Picture of app](/day-planner.png)
